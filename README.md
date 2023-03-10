@@ -22,8 +22,7 @@ it's a simple reminder app made with React-Native and Expo.
 
 ### Preview
 
-<img src = "Images/Preview_Image_1.png" width="200"/>
-<img src = "Images/Preview_Image_2.png" width="200"/>
+<img src = "Images/Preview_Image_1.png" width="200"/> <img src ="Images/Preview_Image_2.png" width="200"/>
 
 ## Features
 
