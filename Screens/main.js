@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import Reminder_Screen from "./Reminder_Screen";
-import Birthday_Screen from "./Birthday_Screen";
 import Settings_Screen from "./Settings_Screen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
@@ -13,7 +12,6 @@ import {
 } from "react-native-paper";
 import { Context as SettingsContext } from "../Context/SettingsContext";
 import { Context as ReminderContext } from "../Context/ReminderDataContext";
-import { Context as BirthdayContext } from "../Context/BirthdayDataContext";
 
 import * as Notifications from "expo-notifications";
 const lighttheme = {
@@ -47,7 +45,6 @@ const Tab = createBottomTabNavigator();
 
 function main() {
   const { init_data, snooze } = useContext(ReminderContext);
-  const { init_data_Birthday } = useContext(BirthdayContext);
   const { state, init_data_Settings } = useContext(SettingsContext);
   var currentTheme = state.Theme ? lighttheme : darktheme;
   const { colors } = currentTheme;
@@ -77,7 +74,6 @@ function main() {
 
   useEffect(() => {
     init_data();
-    init_data_Birthday();
     init_data_Settings();
     setTimeout(() => {
       setLoading(false);
@@ -115,15 +111,6 @@ function main() {
                 ),
               }}
             />
-            {/* <Tab.Screen
-              name="Birthday"
-              component={Birthday_Screen}
-              options={{
-                tabBarIcon: ({ size, color }) => (
-                  <AntDesign name="gift" size={size} color={color} />
-                ),
-              }}
-            /> */}
             <Tab.Screen
               name="Settings"
               component={Settings_Screen}

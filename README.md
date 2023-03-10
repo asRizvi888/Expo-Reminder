@@ -22,16 +22,16 @@ it's a simple reminder app made with React-Native and Expo.
 
 ### Preview
 
-<img  src = "Images/Preview_Image_1.png" width="200"/><img src = "Images/Preview_Image_2.png" width="200"/>
-<img src = "Images/Preview_Image_3.png" width="200"/><img src = "Images/Preview_Image_4.png" width="200"/>
+<img src = "Images/Preview_Image_1.png" width="200"/>
+<img src = "Images/Preview_Image_2.png" width="200"/>
 
 ## Features
 
 - Notification Support
 - Local Storage
 - Dark theme and light theme
+- Reminders
 - Minimal design
-- Birthday Reminders
 - and much more..
 
 ## Testing
@@ -45,5 +45,3 @@ it's a simple reminder app made with React-Native and Expo.
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Thank You
-
-Thanks for checking out my project, feel free to fork it.
